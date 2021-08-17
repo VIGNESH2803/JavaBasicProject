@@ -7,6 +7,12 @@ import java.util.List;
 
 public class FileManager 
 {
+	/**
+	 * This method is used to get the name of all the files in the directory and return as a list
+	 * @param folderPath
+	 * @return list
+	 */
+	
 	public static List<String> getAllFiles(String folderPath)
 
 	{
@@ -22,6 +28,12 @@ public class FileManager
 		
 	}
 
+	/**
+	 * this method is used to search file in specified directory
+	 * @param folderPath
+	 * @param fileName
+	 * @return true or false
+	 */
 	public static boolean searchFiles(String folderPath,String fileName)
 	{
 		 File file = new File(folderPath+"\\"+fileName);
@@ -36,7 +48,7 @@ public class FileManager
 	}
 	
 	/**
-	 * 
+	 * this method used to create file
 	 * @param folderPath
 	 * @param fileName
 	 * @param Content
@@ -65,6 +77,13 @@ public class FileManager
 								
 	}
 
+	
+	/**
+	 * this method is used to delete files
+	 * @param folderPath
+	 * @param fileName
+	 * @return
+	 */
 	public static boolean deleteFile(String folderPath,String fileName)
 	{
 		File file= new File(folderPath+"\\"+fileName);

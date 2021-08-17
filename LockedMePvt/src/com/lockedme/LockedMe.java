@@ -15,10 +15,15 @@ public class LockedMe {
 	{
 		// TODO Auto-generated method stub
 		
+		// Variable declaration
+		
 		int choise;
 		
 	
 		choise=displayMainMenu();
+		
+		
+		// getting choise from the user and looping through 
 		
 		do 
 		{
